@@ -1,5 +1,134 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #364459;
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0E3C44;
+}
+
+h1 {
+    color: #1D7874;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    letter-spacing: .1rem;
+    line-height: 95%;
+    padding-left: 50px;
+    margin: 25px 0px 25px 0px;
+}
+
 #main {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
     display: grid;
-    grid-template-columns: 20% 1fr 2fr 20%;
-    grid-template-rows: 20% auto auto 20%;
+    grid-template-columns: 25% 0.85fr 2.25fr 25%;
+    grid-template-rows: 25% auto minmax(0, 1fr) auto 25%;
+}
+
+#title {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#img-div {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: center;
+    place-self: center;
+    line-height: 60%;
+    max-width: 100%;
+}
+
+#tribute-info {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    padding: 0px 35px 5px 25px;
+    overflow: auto;
+    line-height: 100%;
+    text-align: justify;
+}
+
+#image {
+    position: relative;
+    display: block;
+    height: auto;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    max-height: 85%;
+    border: 3px solid #B98D93;
+}
+
+.div-bg {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    background-color: #D1C7CF;
+}
+
+.img-bg {
+    background-color: #A2676F;
+    grid-column: 2 /3;
+    grid-row: 2 / 5;
+}
+
+.web-bg {
+    background-color: #DAD2D9;
+    grid-column: 3 / 4;
+    grid-row: 4 /5;
+}
+
+#img-caption {
+    font-size: 14px;
+    font-style: italic;
+    color: #2A3C38;
+    display: block;
+    padding-top: 5px;
+}
+
+.copyright {
+    font-size: 10px;
+    font-style: italic;
+    color: #324843;
+    display: block;
+    margin-top: -10px;
+}
+
+a.cclink, a.cclink:visited {
+    color: #263040;
+    text-decoration: none;
+}
+
+a.cclink:hover {
+    color: #A0BBB5;
+    font-size: 11px;
+    letter-spacing: 105%;
+}
+
+.website {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1F6570;
+    font-style: italic;
+    place-self: end center;
+    padding: 4px 0px;
+}
+
+a#tribute-link, a#tribute-link:visited {
+    text-decoration: none;
+    color: #1D7874;
+}
+
+a#tribute-link:hover {
+    text-transform: uppercase;
+    color: #278290;
 }
